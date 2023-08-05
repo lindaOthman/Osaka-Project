@@ -1,0 +1,108 @@
+:root{
+    --maincolor:#ff206e;
+}
+
+
+.navbar-nav .nav-link.active{
+    color:var(--maincolor);
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: var(--maincolor);
+}
+
+.header{
+    background-image: url(..//img/bg_osaka.jpg);
+    background-position: center;
+    background-size: cover;
+    top: -10px;
+}
+.header .header-content a{
+    color: var(--maincolor);
+}
+
+.icon{
+    height: 3rem;
+    width: 3rem;
+    transition: background-color .5s;
+}
+.header .icon:hover{
+    background-color: var(--maincolor);
+    cursor: pointer;
+}
+
+.title h2{
+    font-size: 4rem;
+    letter-spacing: 10px;
+    color: #cacaca;
+    font-weight: 900;
+}
+.title h3{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.about{
+    background-image: url(../img/light_dot.jpg);
+}
+.about .about-content p:first-of-type{
+    color: var(--maincolor);
+}
+
+/* services */
+.services{
+    background-image: url(../img/dark_dot.jpg);
+}
+
+.services .title h2{
+    color: #222;
+}
+.services .title h3{
+    color: #fff;
+    position: relative;
+}
+
+.services .service-item  h3:after{
+    content: ' ';
+    position: absolute;
+    top:90px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15%;
+    height: 3px;
+    background-color: var(--maincolor);
+    transition: width 1s;
+}
+.services .service-item:hover h3:after{
+    width: 30%;
+    transition: background-color .5s;
+
+}
+
+.services .service-item:hover .icon{
+background-color: var(--maincolor) !important;
+}
+
+/* clint */
+.client .clients img{
+    width: 110px;
+    height: 110px;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    height: 30px;
+    text-indent: 0;
+}
+
+.nav-tabs{
+    justify-content: center;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--maincolor);
+    border: none;
+}
+
+.nav-tabs .nav-link{
+    color: #000;
+    border: none;
+}
